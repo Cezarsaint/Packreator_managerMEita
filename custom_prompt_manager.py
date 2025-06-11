@@ -6,7 +6,7 @@ class CharacterPromptGenerator:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "organization": (["lovehent", "vixmavis", "violetjoi", "teste"], {}),
+                "organization": (["meitabu", "patreon2","teste"], {}),
                 "project_type": (["comic", "pack", "extra"], {}),
                 "workspace": (["lightning", "runpod", "sagemaker"], {}),
                 "character_name": ("STRING", {"multiline": True}),
@@ -58,38 +58,28 @@ class CharacterPromptGenerator:
         
         # Map organization selection to its corresponding value
         org_mapping = {
-            "lovehent": "by mdf_an, ratatatat74",
-            "vixmavis": "Anime screencap,Koyorin",
-            "violetjoi":"_style0",
+            "meitabu": "",
+            "patreon2": "",
             "teste":"_style0"
         }
         
         # Organization-specific tags for hiresfix_prompts
         hiresfix_org_mapping = {
             "teste": "_style0",
-            "vixmavis": "fake_screenshot,Koyorin,by free_style_\(yohan1754\)",
-            "violetjoi":"_style0",
-            "lovehent":"by mdf_an,tomu_\(tomubobu\),"
+            "meitabu": "",
+            "patreon2":"",
         }
         
         # Organization-specific source and logo mapping
         org_info_mapping = {
-            "lovehent": {
-                "source": "https://www.patreon.com/lovehent",
-                "logo": "lovehent_watermark.png"
+            "meitabu": {
+                "source": "https://www.patreon.com/meitabu",
+                "logo": "meitabu_watermark.png"
             },
             "vixmavis": {
-                "source": "https://www.patreon.com/vixmavis",
-                "logo": "vixmavis_watermark.png"
+                "source": "https://www.patreon.com/xxxxxx",
+                "logo": "xxxxx_watermark.png"
             },
-            "violetjoi": {
-                "source": "https://www.patreon.com/violetjoi",
-                "logo": "violetjoi_watermark.png"
-            },
-            "teste": {
-                "source": "",
-                "logo": ""
-            }
         }
         
         org_value = org_mapping.get(organization, "")
