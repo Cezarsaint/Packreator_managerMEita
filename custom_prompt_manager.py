@@ -58,7 +58,7 @@ class CharacterPromptGenerator:
         
         # Map organization selection to its corresponding value
         org_mapping = {
-            "meitabu": "",
+            "meitabu": "tomu_\(tomubobu\)",
             "patreon2": "",
             "teste":"_style0"
         }
@@ -66,7 +66,7 @@ class CharacterPromptGenerator:
         # Organization-specific tags for hiresfix_prompts
         hiresfix_org_mapping = {
             "teste": "_style0",
-            "meitabu": "",
+            "meitabu": "tomu_\(tomubobu\)",
             "patreon2":"",
         }
         
