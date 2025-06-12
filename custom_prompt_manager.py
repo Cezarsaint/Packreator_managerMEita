@@ -76,9 +76,9 @@ class CharacterPromptGenerator:
                 "source": "https://www.patreon.com/meitabu",
                 "logo": "meitabu_watermark.png"
             },
-            "vixmavis": {
-                "source": "https://www.patreon.com/xxxxxx",
-                "logo": "xxxxx_watermark.png"
+            "teste": {
+                "source": "https://www.patreon.com/meitabu",
+                "logo": "meitabu_watermark.png"
             },
         }
         
